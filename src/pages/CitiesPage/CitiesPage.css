@@ -1,0 +1,33 @@
+#city-form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 30px;
+  }
+  
+  #city-form .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  #city-form .form-control.form-control-inline {
+    flex-direction: row;
+  }
+  
+  .cities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .city-item {
+    background-color: bisque;
+    padding: 15px;
+    width: calc((100% - 30px) / 2);
+  }
+  
+  .city-item.last-city-item {
+    width: 100%;
+  }
+  
