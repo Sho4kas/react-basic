@@ -1,0 +1,94 @@
+{
+    "cities": [
+      {
+        "name": "Kaunas",
+        "population": 10000,
+        "location": {
+          "continent": "Europe",
+          "country": "Lithuania"
+        },
+        "touristAttractions": [
+          "Pirmas",
+          "Antras"
+        ],
+        "isCapital": false,
+        "id": 2
+      },
+      {
+        "name": "asdasd",
+        "population": 100,
+        "location": {
+          "continent": 1,
+          "country": "sdfsdf"
+        },
+        "touristAttractions": [],
+        "isCapital": false,
+        "id": 3
+      },
+      {
+        "name": "sdfsdf",
+        "population": 100,
+        "location": {
+          "continent": 1,
+          "country": "fsdfsdf"
+        },
+        "touristAttractions": [],
+        "isCapital": false,
+        "id": 4
+      },
+      {
+        "name": "sdfsdf",
+        "population": 1000,
+        "location": {
+          "continent": 1,
+          "country": "asdasd"
+        },
+        "touristAttractions": [],
+        "isCapital": false,
+        "id": 5
+      },
+      {
+        "name": "asdf",
+        "population": 1000,
+        "location": {
+          "continent": 1,
+          "country": "asdasd"
+        },
+        "touristAttractions": [],
+        "isCapital": false,
+        "id": 6
+      },
+      {
+        "name": "sdfsdf",
+        "population": 1000,
+        "location": {
+          "continent": 1,
+          "country": "fsdfsdf"
+        },
+        "touristAttractions": [],
+        "isCapital": false,
+        "id": 7
+      },
+      {
+        "name": "fsdfsdf",
+        "population": 1000,
+        "location": {
+          "continent": 1,
+          "country": "sdfsdf"
+        },
+        "touristAttractions": [],
+        "isCapital": false,
+        "id": 8
+      }
+    ],
+    "continents": [
+      {
+        "id": 1,
+        "name": "Europe"
+      },
+      {
+        "id": 2,
+        "name": "Africa"
+      }
+    ]
+  }

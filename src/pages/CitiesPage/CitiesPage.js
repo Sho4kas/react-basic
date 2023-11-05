@@ -7,18 +7,7 @@ import CitiesForm from "../../Components/CitiesForm";
 
 const CitiesPage = () => {
   const citiesData = [
-    // {
-        // id: uuid(),
-    //     name: 'Vilnius',
-    //     population: 500000,
-    //     location: {
-    //         continent: 'Europe',
-    //         country: 'Lietuva',
-    //     },
-    //     touristAttractions: ['Gedimino pilies bokstas', 'Vilniaus katedra'],
-    //     isCapital: true,
-    // },
-    {
+      {
         id: uuid(),
         name: 'New York',
         population: 8500000,
