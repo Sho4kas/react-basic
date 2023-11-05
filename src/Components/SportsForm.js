@@ -97,13 +97,13 @@ const CitiesForm = (props) => {
   const [invalidForm, setInvalidForm] = useState(false)
 
   useEffect(() => {
-    const getContinents = async () => {
-      const { data } = await axios(`${API_URL}/continents`)
+    const getBranch = async () => {
+      const { data } = await axios(`${API_URL}/branch`)
       setContinentOptions(data)
       setContinent(data[0].id)
     }
 
-    getContinents()
+    getBranch()
   }, [])
 
   useEffect(() => {
@@ -200,9 +200,18 @@ const CitiesForm = (props) => {
 
   return (
     <form id="city-form" onSubmit={newCityHandler}>
-      {/* 5. CSS Module */}
+      
+         <div className="form-control">
+        <label htmlFor="continent" > Sport branch:</label>
+        <select  id="continent" 
+        value={continent} 
+        onChange={continentInputHandler}>
+          {continentOptions.map(continent => <option key={continent.id} value={continent.id}>{continent.name}</option>)}
+        </select>
+      </div>
+
       <div className={`${styles.formControl} ${nameError && styles.invalid}`}>
-        <label htmlFor="name">City name:</label>
+        <label htmlFor="name">Sports category:</label>
         <input
           type="text"
           id="name"
@@ -213,31 +222,9 @@ const CitiesForm = (props) => {
         {nameError && <span className="input-error-message">{nameError}</span>}
       </div>
 
-      {/* 1. Inline CSS sąlygos */}
-      <div className="form-control">
-        <label
-          htmlFor="name"
-          style={{ color: nameError ? 'red' : 'green' }}
-        >
-          City name:
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={name}
-          onChange={nameInputHandler}
-          style={{
-            borderColor: nameError ? 'red' : 'orange',
-            backgroundColor: nameError ? 'pink' : 'transparent',
-          }}
-        />
-        {nameError && <span className="input-error-message">{nameError}</span>}
-      </div>
 
-      {/* 2. Priklausomai nuo state keičiama klasė */}
       <div className={`form-control ${populationError ? 'invalid' : ''}`}>
-        <label htmlFor="population">City population:</label>
+        <label htmlFor="population">Team member/members:</label>
         <input
           type="number"
           min={0}
@@ -247,38 +234,9 @@ const CitiesForm = (props) => {
           value={population}
           onChange={populationInputHandler}
         />
-        {populationError && <span className="input-error-message">Population has to be at least 50 people</span>}
+        {populationError && <span className="input-error-message">Team has to be at least 1 people</span>}
       </div>
 
-      <div className="form-control">
-        <label htmlFor="continent">City continent:</label>
-        {/* <input 
-            type="text"
-            id="continent" 
-            name="continent" 
-            value={continent}
-            onChange={continentInputHandler}
-          /> */}
-
-        <select value={continent} onChange={continentInputHandler}>
-          {continentOptions.map(continent => <option key={continent.id} value={continent.id}>{continent.name}</option>)}
-        </select>
-      </div>
-
-      {/* 3. Styled Components */}
-      {/* <FormControl className={`${countryError ? 'invalid' : ''}`}>
-          <label htmlFor="country">City country:</label>
-          <input 
-            type="text"
-            id="country" 
-            name="country" 
-            value={country}
-            onChange={countryInputHandler}
-          />
-          {countryError && <span className="input-error-message">{countryError}</span>}
-        </FormControl> */}
-
-      {/* 4. Styled Components su props */}
       <FormControlWithProps invalid={countryError && 'invalid'} color="green">
         <label htmlFor="country">City country:</label>
         <input
@@ -326,4 +284,4 @@ const CitiesForm = (props) => {
   )
 }
 
-export default CitiesForm
+export default SportsForm
