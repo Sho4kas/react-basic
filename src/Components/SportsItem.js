@@ -1,6 +1,6 @@
 const SportsItem = (props) => {
     const { fullWidth, onSportsDelete, index, onSportsEdit } = props
-    const { name, member, isOlympic, athletes, nationality } = props.data
+    const { name, member, isOlympic, athletes, nationality, branch } = props.data
 
   
     if (!name || !nationality) {
@@ -14,15 +14,15 @@ const SportsItem = (props) => {
     if (isOlympic) {
       olympicClass = 'olympic'
       titleElement = `${name} (Olympic)`
-      olympicDescription = ` ${name} is the olympic of ${nationality }.`
+      olympicDescription = ` ${name} is the olympic sport.`
     }
   
-    const descriptionElement = `${name} city is located in ${nationality }, ${nationality} and has population of ${member} people.${olympicDescription}`
+    const descriptionElement = `${name} city is located in ${branch }, ${nationality} and has population of ${member} people.${olympicDescription}`
   
     let athletesElement = ''
   
     if (athletes.length > 0) {
-      const athletesTitle = athletes.length === 1 ? `Main Tourist attraction of ${name} is:` : `Main Tourist attractions of ${name} are:`
+      const athletesTitle = athletes.length === 1 ? `Main athlete of ${name} is:` : `Main athletes of ${name} are:`
   
       athletesElement = (
         <div className='athletes-wrapper'>

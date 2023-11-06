@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container"
 import SportsItem from "../../Components/SportsItem";
-import './CitiesPage.css'
+import './SportsPage.css'
 import SportsForm from "../../Components/SportsForm";
 import axios from 'axios';
 import { API_URL } from '../../config';

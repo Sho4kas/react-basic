@@ -9,36 +9,21 @@ const PageHeader = () => {
       <Container>
         <nav className='main-navigation'>
           <ul className='nav-list'>
-            <li className='nav-item'>
-              <NavLink to='/'>Home</NavLink>
-            </li>
-
-            <li className='nav-item'>
-              <NavLink to='/api/ai'>AI API</NavLink>
-            </li>
-
-            <li className='nav-item'>
-              <NavLink to='/api/dogs'>Dogs API</NavLink>
-            </li>
-
-            <li className='nav-item'>
-              <NavLink to='/api/chuck-norris'>Chuck API</NavLink>
-            </li>
-
-            <li className='nav-item'>
-              <NavLink to='/todo'>Todo</NavLink>
-            </li>
-
+            
             <li className='nav-item'>
               <NavLink to='/Sports'>Sports</NavLink>
+            </li> 
+
+            <li className='nav-item'>
+              <NavLink to='/Title'>Title</NavLink>
             </li>
 
             <li className='nav-item'>
-              <NavLink to='/counter'>Counter</NavLink>
+              <NavLink to='/Athletes'>Athletes</NavLink>
             </li>
 
             <li className='nav-item'>
-              <NavLink to='/cars'>Cars</NavLink>
+              <NavLink to='/Nationality'>Nationality</NavLink>
             </li>
           </ul>
         </nav>

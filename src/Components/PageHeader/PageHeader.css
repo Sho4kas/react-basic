@@ -1,5 +1,5 @@
 .page-header {
-    background-color: black;
+    background-color: rgb(2, 0, 122);
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -7,7 +7,7 @@
   
   .page-header .nav-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 10px 20px;
     list-style-type: none;
     margin: 0;
@@ -21,7 +21,7 @@
   }
   
   .page-header .nav-list a.active {
-    color: red;
+    color: rgb(243, 211, 10);
   }
   
   .page-header .nav-list a:hover {

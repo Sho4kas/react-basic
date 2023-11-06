@@ -2,24 +2,35 @@
   "sports": [
     {
       "name": "Power lifting",
-      "member": 10,
-      "nationality": "LTU",
-      "touristAttractions": [
-        "Žydrius"
+      "member": 15,
+      "nationality": "USA",
+      "athletes": [
+        "Asas",
+        "Basas",
+        "Ananasas"
       ],
       "isOlympic": true,
-      "id": 1
+      "id": 3
     },
     {
-      "name": "Krepšinis",
-      "member": 5,
+      "name": "Power lifting",
+      "member": 1,
       "nationality": "LTU",
-      "touristAttractions": [
-        "Sabonis",
-        "Marčiulionis"
-      ],
+      "athletes": [],
       "isOlympic": true,
-      "id": 2
+      "id": 4
+    },
+    {
+      "name": "Power lifting",
+      "member": 3,
+      "nationality": "LTU",
+      "athletes": [
+        "Žydrius",
+        "Raudžius",
+        "Antanas"
+      ],
+      "isOlympic": false,
+      "id": 5
     }
   ],
   "branch": [
