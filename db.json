@@ -1,28 +1,25 @@
 {
-  "cities": [
+  "sports": [
     {
-      "name": "New York",
-      "population": 1561654,
-      "location": {
-        "continent": "2",
-        "country": "United States"
-      },
-      "touristAttractions": [],
-      "isCapital": true,
-      "id": 2
+      "name": "Power lifting",
+      "member": 10,
+      "nationality": "LTU",
+      "touristAttractions": [
+        "Žydrius"
+      ],
+      "isOlympic": true,
+      "id": 1
     },
     {
-      "name": "gyra",
-      "population": 50,
-      "location": {
-        "continent": 1,
-        "country": "sportas"
-      },
+      "name": "Krepšinis",
+      "member": 5,
+      "nationality": "LTU",
       "touristAttractions": [
-        "Hgichgik"
+        "Sabonis",
+        "Marčiulionis"
       ],
-      "isCapital": false,
-      "id": 3
+      "isOlympic": true,
+      "id": 2
     }
   ],
   "branch": [

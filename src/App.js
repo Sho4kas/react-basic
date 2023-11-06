@@ -1,5 +1,5 @@
 import { Link, Route, Routes } from 'react-router-dom'
-import CitiesPage from './pages/CitiesPage/CitiesPage'
+import SportsPage from './pages/SportsPage/SportsPage.js'
 import PageHeader from './Components/PageHeader/PageHeader.js'
 import './App.css'
 
@@ -11,7 +11,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<h1>Home Page</h1>} />
-        <Route path='/cities' element={<CitiesPage />} />
+        <Route path='/Sports' element={<SportsPage/>} />
         {/* <Route path='/counter' element={<CounterPage />} />
         <Route path='/cars' element={<CarsPage />} />
         <Route path='/todo' element={<TodoPage />} />
@@ -20,8 +20,6 @@ function App() {
         <Route path='/api/chuck-norris' element={<APIChickNorrisPage />} />
         <Route path='/api/dogs' element={<DogsPage />} />
         <Route path='/api/ai' element={<AIPage />} /> */}
-
-
 
         <Route path='*' element={<h1>404: Page not found</h1>} />
       </Routes>

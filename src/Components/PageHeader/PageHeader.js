@@ -30,7 +30,7 @@ const PageHeader = () => {
             </li>
 
             <li className='nav-item'>
-              <NavLink to='/cities'>Cities</NavLink>
+              <NavLink to='/Sports'>Sports</NavLink>
             </li>
 
             <li className='nav-item'>
