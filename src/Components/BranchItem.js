@@ -1,6 +1,6 @@
 const BranchItem = (props) => {
     const { onBranchDelete, index, onBranchEdit } = props
-    const { name } = props.data
+    const { name, id } = props.data
 
   
     if (!name) {
@@ -15,7 +15,7 @@ const BranchItem = (props) => {
         <h2>{titleElement}</h2>
         <p>{descriptionElement}</p>
       
-        <button onClick={() => onBranchDelete(index)}>Remove</button>
+        <button onClick={() => onBranchDelete(id)}>Remove</button>
         <button onClick={() => onBranchEdit(index)}>Edit</button>
       </div>
     )

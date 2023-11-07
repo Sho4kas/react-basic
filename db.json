@@ -2,53 +2,68 @@
   "sports": [
     {
       "name": "Power lifting",
-      "member": 2,
-      "nationality": "USA",
+      "member": 1,
+      "nationality": "LTU",
       "athletes": [
-        "Dxfdsaf",
-        "Djidifgfhg"
+        "Amandas Paulauskas"
       ],
       "isOlympic": false,
-      "id": 2
+      "id": 1
     },
     {
-      "name": "New York",
-      "member": 3,
-      "nationality": "USA",
-      "athletes": [],
-      "isOlympic": true,
-      "id": 3
-    },
-    {
-      "name": "Power lifting",
-      "member": 56,
-      "nationality": "USA",
+      "name": "Basketball",
+      "member": 12,
+      "nationality": "LTU",
       "athletes": [
-        "Fghfgdhfgh",
-        "Dsfsad",
-        "Awrdfafs",
-        ""
+        "Margiris Normantas",
+        "Tadas Sedekerskis",
+        "Ignas Brazdeikis",
+        "Gabrielius Maldūnas",
+        "Rokas Jokubaitis",
+        "Jonas Valančiūnas",
+        "Mindaugas Kuzminskas",
+        "Donatas Motiejūnas",
+        "Eimantas Bendžius",
+        "Vaidas Kariniauskas",
+        "Tomas Dimša",
+        "Deividas Sirvydis"
       ],
       "isOlympic": true,
-      "id": 4
+      "id": 2
     }
   ],
   "branch": [
     {
-      "name": "Power lifting",
+      "name": "Group sports",
+      "id": 3
+    },
+    {
+      "name": "Gymnastics",
+      "id": 4
+    },
+    {
+      "name": "Cycling ",
+      "id": 5
+    },
+    {
+      "name": "Water sport",
       "id": 6
     },
     {
-      "name": "New frffr",
+      "name": "Extreme sport",
       "id": 7
     },
     {
-      "name": "New York",
+      "name": "Winter sport",
       "id": 8
     },
     {
-      "name": "Group sports",
+      "name": "Athletics",
       "id": 9
+    },
+    {
+      "name": "Strength sport",
+      "id": 10
     }
   ]
 }

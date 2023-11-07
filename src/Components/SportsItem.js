@@ -1,6 +1,6 @@
 const SportsItem = (props) => {
-    const { onSportsDelete, index, onSportsEdit } = props
-    const { name, member, isOlympic, athletes, nationality } = props.data
+    const { onSportsDelete, index, onSportsEdit} = props
+    const { name, member, isOlympic, athletes, nationality, id } = props.data
 
   
     if (!name || !nationality) {
@@ -42,7 +42,7 @@ const SportsItem = (props) => {
         <p>{descriptionElement}</p>
         {athletesElement}
   
-        <button onClick={() => onSportsDelete(index)}>Remove</button>
+        <button onClick={() => onSportsDelete(id)}>Remove</button>
         <button onClick={() => onSportsEdit(index)}>Edit</button>
       </div>
     )

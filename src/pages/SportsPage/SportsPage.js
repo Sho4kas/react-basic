@@ -7,14 +7,13 @@ import axios from 'axios';
 import { API_URL } from '../../config';
 
 const SportsPage = () => {
-
   const [sports, setSports] = useState([])
   const [editSports, setEditSports] = useState(null)
 
   useEffect(() => {
     const getSports = async () => {
-        const { data } = await axios(`${API_URL}/sports`)
-        setSports(data)
+      const { data } = await axios(`${API_URL}/sports`)
+      setSports(data)
     }
 
     getSports()
@@ -22,20 +21,20 @@ const SportsPage = () => {
 
   const addSportsHandler = async newSports => {
     if (editSports) {
-        axios.put(`${API_URL}/sports/${editSports.id}`, newSports)
+      axios.put(`${API_URL}/sports/${editSports.id}`, newSports)
 
-        setSports(prevState => {
-            const editId = editSports.id
-            const editSportsIndex = prevState.findIndex(sports => sports.id === editId)
-            const newState = [...prevState]
-            newState[editSportsIndex] = newSports
+      setSports(prevState => {
+        const editId = editSports.id
+        const editSportsIndex = prevState.findIndex(sports => sports.id === editId)
+        const newState = [...prevState]
+        newState[editSportsIndex] = newSports
 
-            setEditSports(null)
-            return newState
-        })
+        setEditSports(null)
+        return newState
+      })
     } else {
-        const { data } = await axios.post(`${API_URL}/sports`, newSports)
-        setSports(prevState => [data, ...prevState])
+      const { data } = await axios.post(`${API_URL}/sports`, newSports)
+      setSports(prevState => [data, ...prevState])
     }
   }
 
@@ -51,9 +50,8 @@ const SportsPage = () => {
   }
 
   const sportsListElement = sports.map((sports, index) => {
-   
 
-    return <SportsItem onSportsEdit={editSportsHandler} onSportsDelete={removeSportsHandler} index={index} key={index} data={sports}/>
+    return <SportsItem onSportsEdit={editSportsHandler} onSportsDelete={removeSportsHandler} index={index} key={index} data={sports} />
   })
 
   return (

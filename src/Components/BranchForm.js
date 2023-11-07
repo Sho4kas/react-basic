@@ -52,7 +52,7 @@ const BranchForm = (props) => {
       }
   
       const newBranch = {
-        name,
+        name
       }
   
       setName('')
@@ -67,15 +67,6 @@ const BranchForm = (props) => {
     return (
       <form id="branch-form" onSubmit={newBranchHandler}>
         
-        <div className="form-control">
-        <label htmlFor="branch" >Choose a sport branch:</label>
-        <select  id="branch" 
-        value={branch} 
-        onChange={branchInputHandler}>
-          {branchOptions.map(branch => <option key={branch.id} value={branch.id}>{branch.name}</option>)}
-        </select>
-      </div>
-
         <div className={`${styles.formControl} ${nameError && styles.invalid}`}>
           <label htmlFor="name"> Add new sport branch:</label>
           <input
@@ -88,9 +79,7 @@ const BranchForm = (props) => {
           {nameError && <span className="input-error-message">{nameError}</span>}
         </div>
   
-  
 
-  
         <input type="submit" value={editBranchData ? 'Edit Branch' : 'Add New sports branch'} />
   
         {invalidForm && (

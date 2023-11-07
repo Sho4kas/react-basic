@@ -259,7 +259,7 @@ const SportsForm = (props) => {
       <div className="form-control">
         <label htmlFor="athletes">Participating athletes:</label>
         <textarea
-          rows={5}
+          rows={4}
           value={athletes.join(', ')}
           id="athletes"
           name="athletes"
