@@ -5,7 +5,7 @@ const TitlePage = () => {
     
     return (
         <Container>
-<h1>Title</h1>
+<h1>"Title" page still creating. Coming soon</h1>
 </Container>
 )
 }

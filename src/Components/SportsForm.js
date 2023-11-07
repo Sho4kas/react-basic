@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { API_URL } from '../config'
 import axios from 'axios'
 import styled from 'styled-components'
-import styles from './CitiesForm.module.css';
+import styles from './SportsForm.module.css';
 
 const FormControl = styled.div`
   display: flex;
@@ -268,7 +268,7 @@ const SportsForm = (props) => {
         </textarea>
       </div>
 
-      <input type="submit" value={editSportsData ? 'Edit Sports' : 'Create New Sports'} />
+      <input type="submit" value={editSportsData ? 'Edit Sports' : 'Add New Sports'} />
 
       {invalidForm && (
         <div className="error-wrapper">

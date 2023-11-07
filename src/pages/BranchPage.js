@@ -50,16 +50,14 @@ const BranchPage = () => {
   }
 
   const branchListElement = branch.map((branch, index) => {
-    const lastOddElement = index + 1 === branch.length && index % 2 === 0
-
-    return <BranchItem onBranchEdit={editBranchHandler} onBranchDelete={removeBranchHandler} index={index} key={index} data={branch} fullWidth={lastOddElement} />
+    return <BranchItem onBranchEdit={editBranchHandler} onBranchDelete={removeBranchHandler} index={index} key={index} data={branch}/>
   })
 
   return (
     <Container>
       <BranchForm editBranchData={editBranch} onNewBranch={addBranchHandler} />
 
-      <div className="branch-list">
+      <div className="sport-list">
         {branchListElement}
       </div>
     </Container>

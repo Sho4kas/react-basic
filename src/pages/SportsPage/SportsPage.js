@@ -51,9 +51,9 @@ const SportsPage = () => {
   }
 
   const sportsListElement = sports.map((sports, index) => {
-    const lastOddElement = index + 1 === sports.length && index % 2 === 0
+   
 
-    return <SportsItem onSportsEdit={editSportsHandler} onSportsDelete={removeSportsHandler} index={index} key={index} data={sports} fullWidth={lastOddElement} />
+    return <SportsItem onSportsEdit={editSportsHandler} onSportsDelete={removeSportsHandler} index={index} key={index} data={sports}/>
   })
 
   return (

@@ -1,6 +1,6 @@
 const SportsItem = (props) => {
-    const { fullWidth, onSportsDelete, index, onSportsEdit } = props
-    const { name, member, isOlympic, athletes, nationality, branch } = props.data
+    const { onSportsDelete, index, onSportsEdit } = props
+    const { name, member, isOlympic, athletes, nationality } = props.data
 
   
     if (!name || !nationality) {
@@ -17,12 +17,12 @@ const SportsItem = (props) => {
       olympicDescription = ` ${name} is the olympic sport.`
     }
   
-    const descriptionElement = `${name} city is located in ${branch }, ${nationality} and has population of ${member} people.${olympicDescription}`
+    const descriptionElement = `${nationality} ${name} national team represents ${member} people.${olympicDescription}`
   
     let athletesElement = ''
   
     if (athletes.length > 0) {
-      const athletesTitle = athletes.length === 1 ? `Main athlete of ${name} is:` : `Main athletes of ${name} are:`
+      const athletesTitle = athletes.length === 1 ? `Team member of ${name} is:` : `Team member of ${name} are:`
   
       athletesElement = (
         <div className='athletes-wrapper'>
@@ -35,11 +35,9 @@ const SportsItem = (props) => {
         </div>
       )
     }
-  
-    let lastItemClass = fullWidth ? 'last-city-item' : ''
-  
+    
     return (
-      <div className={`city-item ${olympicClass} ${lastItemClass}`}>
+      <div className={`sport-item ${olympicClass}`}>
         <h2>{titleElement}</h2>
         <p>{descriptionElement}</p>
         {athletesElement}

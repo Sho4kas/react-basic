@@ -18,16 +18,13 @@
   .sport-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
   }
   
   .sport-item {
-    background-color: bisque;
-    padding: 15px;
-    width: calc((100% - 30px) / 2);
-  }
-  
-  .sport-item.last-sport-item {
-    width: 100%;
+    background-color: rgb(176, 188, 204);
+    padding: 10px;
+    margin: 10px;
+    width: calc((100% - 40px) / 2);
+    border-radius: 20px;
   }
   

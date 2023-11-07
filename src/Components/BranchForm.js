@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { API_URL } from '../config'
 import axios from 'axios'
 import styled from 'styled-components'
-import styles from './CitiesForm.module.css';
+import styles from './SportsForm.module.css';
 
 
 
@@ -42,7 +42,7 @@ const BranchForm = (props) => {
         setNameError('Name is required')
         formIsValid = false
       } else if (name.length < 5) {
-        setNameError('Name must be at least 5 letters long')
+        setNameError('Sports branch must be at least 5 letters long')
         formIsValid = false
       }
    
@@ -68,7 +68,7 @@ const BranchForm = (props) => {
       <form id="branch-form" onSubmit={newBranchHandler}>
         
         <div className="form-control">
-        <label htmlFor="branch" > Sport branch:</label>
+        <label htmlFor="branch" >Choose a sport branch:</label>
         <select  id="branch" 
         value={branch} 
         onChange={branchInputHandler}>
@@ -77,7 +77,7 @@ const BranchForm = (props) => {
       </div>
 
         <div className={`${styles.formControl} ${nameError && styles.invalid}`}>
-          <label htmlFor="name">Sports category:</label>
+          <label htmlFor="name"> Add new sport branch:</label>
           <input
             type="text"
             id="name"
@@ -91,7 +91,7 @@ const BranchForm = (props) => {
   
 
   
-        <input type="submit" value={editBranchData ? 'Edit Branch' : 'Create New Branch'} />
+        <input type="submit" value={editBranchData ? 'Edit Branch' : 'Add New sports branch'} />
   
         {invalidForm && (
           <div className="error-wrapper">

@@ -2,54 +2,53 @@
   "sports": [
     {
       "name": "Power lifting",
-      "member": 4,
+      "member": 2,
       "nationality": "USA",
       "athletes": [
-        "ASass",
-        "Disljfhuadsh",
-        "Aspfji",
-        "Aospdjfsoifh"
+        "Dxfdsaf",
+        "Djidifgfhg"
       ],
-      "isOlympic": true,
-      "id": 6
-    },
-    {
-      "name": "Power lifting",
-      "member": 2,
-      "nationality": "LTU",
-      "athletes": [],
       "isOlympic": false,
-      "id": 7
+      "id": 2
     },
     {
       "name": "New York",
-      "member": 1,
-      "nationality": "LTU",
+      "member": 3,
+      "nationality": "USA",
       "athletes": [],
-      "isOlympic": false,
-      "id": 8
+      "isOlympic": true,
+      "id": 3
+    },
+    {
+      "name": "Power lifting",
+      "member": 56,
+      "nationality": "USA",
+      "athletes": [
+        "Fghfgdhfgh",
+        "Dsfsad",
+        "Awrdfafs",
+        ""
+      ],
+      "isOlympic": true,
+      "id": 4
     }
   ],
   "branch": [
     {
-      "name": "Team A",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Strength sports"
-    },
-    {
-      "name": "Athletics",
-      "id": 3
-    },
-    {
-      "name": "Team sports",
-      "id": 4
-    },
-    {
       "name": "Power lifting",
-      "id": 5
+      "id": 6
+    },
+    {
+      "name": "New frffr",
+      "id": 7
+    },
+    {
+      "name": "New York",
+      "id": 8
+    },
+    {
+      "name": "Group sports",
+      "id": 9
     }
   ]
 }
