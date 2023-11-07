@@ -2,53 +2,54 @@
   "sports": [
     {
       "name": "Power lifting",
-      "member": 15,
+      "member": 4,
       "nationality": "USA",
       "athletes": [
-        "Asas",
-        "Basas",
-        "Ananasas"
+        "ASass",
+        "Disljfhuadsh",
+        "Aspfji",
+        "Aospdjfsoifh"
       ],
       "isOlympic": true,
-      "id": 3
+      "id": 6
     },
     {
       "name": "Power lifting",
+      "member": 2,
+      "nationality": "LTU",
+      "athletes": [],
+      "isOlympic": false,
+      "id": 7
+    },
+    {
+      "name": "New York",
       "member": 1,
       "nationality": "LTU",
       "athletes": [],
-      "isOlympic": true,
-      "id": 4
-    },
-    {
-      "name": "Power lifting",
-      "member": 3,
-      "nationality": "LTU",
-      "athletes": [
-        "Žydrius",
-        "Raudžius",
-        "Antanas"
-      ],
       "isOlympic": false,
-      "id": 5
+      "id": 8
     }
   ],
   "branch": [
     {
-      "id": 1,
-      "name": "Acrobatics"
+      "name": "Team A",
+      "id": 1
     },
     {
       "id": 2,
       "name": "Strength sports"
     },
     {
-      "id": 3,
-      "name": "Athletics"
+      "name": "Athletics",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Team sports"
+      "name": "Team sports",
+      "id": 4
+    },
+    {
+      "name": "Power lifting",
+      "id": 5
     }
   ]
 }

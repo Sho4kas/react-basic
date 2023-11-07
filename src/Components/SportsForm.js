@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import { API_URL } from '../config'
 import axios from 'axios'
-
 import styled from 'styled-components'
-
 import styles from './CitiesForm.module.css';
 
 const FormControl = styled.div`
@@ -117,7 +115,7 @@ const SportsForm = (props) => {
     }
   }, [editSportsData])
 
-  const newCityHandler = (event) => {
+  const newSportsHandler = (event) => {
     event.preventDefault()
 
     setNameError('')
@@ -196,7 +194,7 @@ const SportsForm = (props) => {
   }
 
   return (
-    <form id="city-form" onSubmit={newCityHandler}>
+    <form id="sport-form" onSubmit={newSportsHandler}>
       
          <div className="form-control">
         <label htmlFor="branch" > Sport branch:</label>
@@ -259,7 +257,7 @@ const SportsForm = (props) => {
       </div>
 
       <div className="form-control">
-        <label htmlFor="athletes">City tourist attractions:</label>
+        <label htmlFor="athletes">Participating athletes:</label>
         <textarea
           rows={5}
           value={athletes.join(', ')}
@@ -274,7 +272,7 @@ const SportsForm = (props) => {
 
       {invalidForm && (
         <div className="error-wrapper">
-          <span className="input-error-message">Something is missing...</span>
+          <span className="input-error-message">Data is missing...</span>
         </div>
       )}
     </form>
