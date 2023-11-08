@@ -65,9 +65,9 @@ const BranchForm = (props) => {
     
   
     return (
-      <form id="branch-form" onSubmit={newBranchHandler}>
+      <form id="sport-form" onSubmit={newBranchHandler}>
         
-        <div className={`${styles.formControl} ${nameError && styles.invalid}`}>
+        <div className={`formControl ${nameError} ${styles.formControl}`}>
           <label htmlFor="name"> Add new sport branch:</label>
           <input
             type="text"

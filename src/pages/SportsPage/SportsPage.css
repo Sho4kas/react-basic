@@ -1,30 +1,48 @@
 #sport-form {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    padding: 30px;
-  }
-  
-  #sport-form .form-control {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  
-  #sport-form .form-control.form-control-inline {
-    flex-direction: row;
-  }
-  
-  .sport-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .sport-item {
-    background-color: rgb(176, 188, 204);
-    padding: 10px;
-    margin: 10px;
-    width: calc((100% - 40px) / 2);
-    border-radius: 20px;
-  }
-  
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#sport-form .form-control {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+#sport-form .form-control.form-control-inline {
+  flex-direction: row;
+}
+
+.sport-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sport-item {
+  background-color: rgb(236, 231, 229);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  width: calc((100% - 40px) / 2);
+  border-radius: 20px;
+}
+
+button {
+  border-radius: 10px;
+  font-size: medium;
+  margin-right: 10px;
+  padding: 5px 25px;
+  font-family: cursive;
+}
+
+input {
+  border-radius: 10px;
+  font-size: medium;
+  margin-right: 10px;
+  padding: 5px 25px;
+  font-family: cursive;
+}

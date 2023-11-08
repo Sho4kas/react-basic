@@ -10,8 +10,6 @@
     justify-content: flex-start;
     gap: 10px 20px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
   
   .page-header .nav-list a {
@@ -21,7 +19,7 @@
   }
   
   .page-header .nav-list a.active {
-    color: rgb(243, 211, 10);
+    color: rgb(246, 214, 7);
   }
   
   .page-header .nav-list a:hover {

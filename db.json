@@ -30,13 +30,34 @@
       ],
       "isOlympic": true,
       "id": 2
+    },
+    {
+      "name": "Swiming",
+      "member": 6,
+      "nationality": "LTU",
+      "athletes": [
+        "Danas Rapšys",
+        "Andrius Šidlauskas",
+        "Erikas Grigaitis",
+        "Kajus Stanlkevičius",
+        "Smiltė Plytnikaitė",
+        "Adomas Gatulis"
+      ],
+      "isOlympic": true,
+      "id": 3
+    },
+    {
+      "name": "155",
+      "member": 13,
+      "nationality": "LTU",
+      "athletes": [
+        "M;'m"
+      ],
+      "isOlympic": true,
+      "id": 4
     }
   ],
   "branch": [
-    {
-      "name": "Group sports",
-      "id": 3
-    },
     {
       "name": "Gymnastics",
       "id": 4
@@ -64,6 +85,10 @@
     {
       "name": "Strength sport",
       "id": 10
+    },
+    {
+      "name": "Group sports",
+      "id": 11
     }
   ]
 }

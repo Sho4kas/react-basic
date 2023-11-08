@@ -58,7 +58,7 @@ const SportsPage = () => {
     <Container>
       <SportsForm editSportsData={editSports} onNewSports={addSportsHandler} />
 
-      <div className="sports-list">
+      <div className="sport-list">
         {sportsListElement}
       </div>
     </Container>

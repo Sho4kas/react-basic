@@ -4,47 +4,6 @@ import axios from 'axios'
 import styled from 'styled-components'
 import styles from './SportsForm.module.css';
 
-const FormControl = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-  gap: 10px 0;
-
-  &.form-control-inline {
-    flex-direction: row;
-  }
-
-  label {
-    font-weight: 600;
-    color: green;
-    font-size: 20px;
-  }
-
-  input {
-    border: 2px solid orange;
-    border-radius: 50px;
-    padding: 5px 15px;
-
-    &:focus {
-      background-color: rgb(253, 237, 240);
-    }
-  }
-
-  &.invalid {
-    input {
-      border-color: red;
-      background-color: pink;
-    }
-
-    label {
-      color: red;
-    }
-  }
-
-  .input-error-message {
-    color: red;
-  }
-`
 
 const FormControlWithProps = styled.div`
   display: flex;
@@ -126,10 +85,10 @@ const SportsForm = (props) => {
     let formIsValid = true
 
     if (!name) {
-      setNameError('Name is required')
+      setNameError('Sports category required')
       formIsValid = false
     } else if (name.length < 3) {
-      setNameError('Name must be at least 3 letters long')
+      setNameError('Category must be at least 3 letters long')
       formIsValid = false
     }
 
@@ -142,7 +101,7 @@ const SportsForm = (props) => {
       setNationalityError('Nationality required')
       formIsValid = false
     } else if (nationality.length < 3) {
-      setNationalityError('Nationality  must be at least 3 letters long')
+      setNationalityError('Nationality must be at least 3 letters long')
       formIsValid = false
     }
 
@@ -195,8 +154,7 @@ const SportsForm = (props) => {
 
   return (
     <form id="sport-form" onSubmit={newSportsHandler}>
-      
-         <div className="form-control">
+         <div className={`${styles.formControl}`}>
         <label htmlFor="branch" > Sport branch:</label>
         <select  id="branch" 
         value={branch} 
@@ -205,7 +163,7 @@ const SportsForm = (props) => {
         </select>
       </div>
 
-      <div className={`${styles.formControl} ${nameError && styles.invalid}`}>
+      <FormControlWithProps invalid={nameError && 'invalid'} color="green">
         <label htmlFor="name">Sports category:</label>
         <input
           type="text"
@@ -215,10 +173,10 @@ const SportsForm = (props) => {
           onChange={nameInputHandler}
         />
         {nameError && <span className="input-error-message">{nameError}</span>}
-      </div>
+        </FormControlWithProps>
 
 
-      <div className={`form-control ${memberError ? 'invalid' : ''}`}>
+      <div className={`form-control ${styles.formControl} ${memberError ? 'invalid' : ''}`}>
         <label htmlFor="member">Team member/members:</label>
         <input
           type="number"
@@ -256,10 +214,10 @@ const SportsForm = (props) => {
         <label htmlFor="olympic">Olympic</label>
       </div>
 
-      <div className="form-control">
+      <div className={`form-control ${styles.formControl}`}>
         <label htmlFor="athletes">Participating athletes:</label>
         <textarea
-          rows={4}
+          rows={5}
           value={athletes.join(', ')}
           id="athletes"
           name="athletes"
@@ -268,11 +226,11 @@ const SportsForm = (props) => {
         </textarea>
       </div>
 
-      <input type="submit" value={editSportsData ? 'Edit Sports' : 'Add New Sports'} />
+      <input type="submit" value={editSportsData ? 'Edit Sports' : 'Create New Sports'} />
 
       {invalidForm && (
         <div className="error-wrapper">
-          <span className="input-error-message">Data is missing...</span>
+          <span color='red' className="input-error-message">Data is missing...</span>
         </div>
       )}
     </form>
